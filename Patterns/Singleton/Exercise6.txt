@@ -1,0 +1,15 @@
+class Program 
+{ 
+static void Main() 
+{ 
+// Crear un servicio 
+SomeService service = new SomeService(); 
+// Realizar una tarea que requiere configuración 
+service.PerformTask(); 
+// Otro ejemplo: acceder a la configuración desde otra parte de la 
+aplicación 
+string apiEndpoint = 
+ConfigurationManager.Instance.GetConfiguration("apiEndpoint"); 
+Console.WriteLine($"API Endpoint: {apiEndpoint}"); 
+} 
+} 

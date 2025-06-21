@@ -1,0 +1,69 @@
+EJERCICIO 2 
+public abstract class GameUnit 
+{ 
+public int Health { get; set; } 
+public int Attack { get; set; } 
+public int Defense { get; set; } 
+ 
+// Simula la carga de recursos costosos como modelos 3D, texturas, etc. 
+public virtual void LoadResources() 
+{ 
+Console.WriteLine("Loading resources..."); 
+} 
+} 
+public class Archer : GameUnit 
+{ 
+public Archer() 
+{ 
+LoadResources(); 
+Health = 100; 
+Attack = 15; 
+Defense = 5; 
+} 
+} 
+public class Knight : GameUnit 
+{ 
+public Knight() 
+{ 
+LoadResources(); 
+Health = 200; 
+Attack = 20; 
+Defense = 10; 
+} 
+} 
+class Program 
+{ 
+static void Main(string[] args) 
+{ 
+Console.WriteLine("Creating original Archer..."); 
+Archer originalArcher = new Archer(); 
+Console.WriteLine("Copying Archers manually..."); 
+Archer copiedArcher1 = new Archer 
+{ 
+Health = originalArcher.Health, 
+Attack = originalArcher.Attack, 
+Defense = originalArcher.Defense 
+}; 
+Archer copiedArcher2 = new Archer 
+{ 
+Health = originalArcher.Health, 
+Attack = originalArcher.Attack, 
+Defense = originalArcher.Defense 
+}; 
+Console.WriteLine("Creating original Knight..."); 
+Knight originalKnight = new Knight(); 
+Console.WriteLine("Copying Knights manually..."); 
+Knight copiedKnight1 = new Knight 
+{ 
+Health = originalKnight.Health, 
+Attack = originalKnight.Attack, 
+Defense = originalKnight.Defense 
+}; 
+Knight copiedKnight2 = new Knight 
+{ 
+Health = originalKnight.Health, 
+Attack = originalKnight.Attack, 
+Defense = originalKnight.Defense 
+}; 
+} 
+} 

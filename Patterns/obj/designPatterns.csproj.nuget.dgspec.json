@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/designPatterns/designPatterns.csproj": {}
+    "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/Patterns/designPatterns.csproj": {}
   },
   "projects": {
-    "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/designPatterns/designPatterns.csproj": {
+    "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/Patterns/designPatterns.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/designPatterns/designPatterns.csproj",
+        "projectUniqueName": "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/Patterns/designPatterns.csproj",
         "projectName": "designPatterns",
-        "projectPath": "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/designPatterns/designPatterns.csproj",
+        "projectPath": "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/Patterns/designPatterns.csproj",
         "packagesPath": "/Users/joaquinscarone/.nuget/packages/",
-        "outputPath": "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/designPatterns/obj/",
+        "outputPath": "/Users/joaquinscarone/Documents/Proyects2025/designPatterns/Patterns/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joaquinscarone/.nuget/NuGet/NuGet.Config"
