@@ -1,0 +1,29 @@
+public class SandwichBuilder : ISandwichBuilder
+{
+    private Sandwich _sandwich = new Sandwich();
+
+    public void Reset()
+    {
+        _sandwich = new Sandwich();
+    }
+
+    public void SetBread(string bread)
+    {
+        _sandwich.Bread = bread;
+    }
+
+    public void SetMeat(string meat)
+    {
+        _sandwich.Meat = meat;
+    }
+
+    public void SetCheese(string cheese)
+    {
+        _sandwich.Cheese = cheese;
+    }
+
+    public Sandwich GetResult()
+    {
+        return _sandwich;
+    }
+}
