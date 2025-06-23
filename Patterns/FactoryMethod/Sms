@@ -1,8 +1,0 @@
-public class Sms : IMessage
-{
-    public override void Send()
-    {
-       Console.WriteLine($"Sending SMS message: {message}");
-        // Lógica para enviar SMS...
-    }
-}
