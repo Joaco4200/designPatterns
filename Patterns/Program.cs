@@ -8,10 +8,6 @@ public class Program {
         Sandwich veggieSandwich= builder.GetResult();
         Console.WriteLine(veggieSandwich);*/
 
-        /*Console.WriteLine("Creating archer unit...");
-        GameUnit archer = new Archer();
-        GameUnit clonedArcher = archer.Clone()*/
-
         /*Book originalBook = new Book
         {
             Title = "Harry Potter",
@@ -29,6 +25,14 @@ public class Program {
         // Imprimir los estudiantes que han tomado prestado el libro original
         originalBook.PrintBorrowedStudents();*/
 
-        
+        var emailSystem = new EmailNotificationSystem();
+        var smsSystem = new SMSNotificationSystem();
+        var message = "This is a notification message.";
+        // Simulate subscribing users
+        emailSystem.Subscribe("user1@example.com");
+        smsSystem.AddPhoneNumber("123-456-7890");
+        // Simulate sending notifications
+        emailSystem.SendEmail(message);
+        smsSystem.SendMessage(message);
    }   
 }
