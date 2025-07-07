@@ -25,14 +25,22 @@ public class Program {
         // Imprimir los estudiantes que han tomado prestado el libro original
         originalBook.PrintBorrowedStudents();*/
 
-        var emailSystem = new EmailNotificationSystem();
-        var smsSystem = new SMSNotificationSystem();
-        var message = "This is a notification message.";
-        // Simulate subscribing users
-        emailSystem.Subscribe("user1@example.com");
-        smsSystem.AddPhoneNumber("123-456-7890");
-        // Simulate sending notifications
-        emailSystem.SendEmail(message);
-        smsSystem.SendMessage(message);
+
+
+        /*NotificationService notificationService = new NotificationService();
+        EmailNotificationSender emailListener = new EmailNotificationSender();
+        emailListener.addEmail("joacoaaar@gmail.com");
+        SMSNotificationSender smsListener = new SMSNotificationSender();
+        smsListener.AddPhoneNumber("098383474");
+
+        notificationService.addListener(emailListener);
+        notificationService.addListener(smsListener);
+        notificationService.notifyListeners();*/
+
+        IPaymentProcesor socketpayment = new SocketPaymentProcessorAdapter();
+        IPaymentProcesor restpayment = new RestPaymentProcessorAdapter();
+
+        socketpayment.ProcessPayment("juan", 10.0);
+        restpayment.ProcessPayment("rodrigo", 90.0);
    }   
 }

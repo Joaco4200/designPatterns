@@ -1,24 +1,20 @@
 public class NotificationService
 {
-    private List<IListener> listeners;
-    public NotificationService()
+    private List<IListener> listeners = new List<IListener>();
+    
+    public void addListener(IListener listener)
     {
-        listeners = new ArrayList<>();
+        listeners.Add(listener);
     }
 
-    public void addListener(Listeners listener)
+    public void removeListeners(IListener listener)
     {
-        observers.add(listener);
-    }
-
-    public void removeListeners(Listeners listener)
-    {
-        observers.remove(listener);
+        listeners.Remove(listener);
     }
 
     public void notifyListeners()
     {
-        foreach (listeners l in listeners) {
+        foreach (var l in listeners) {
             l.update();
         }
     }
