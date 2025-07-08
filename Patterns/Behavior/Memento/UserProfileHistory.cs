@@ -1,4 +1,4 @@
-public class HistoryMemento
+public class UserProfileHistory
 {
     public UserProfile userProfile; // Originator
     public Stack<ProfileMemento> history = new Stack<ProfileMemento>();
@@ -9,8 +9,8 @@ public class HistoryMemento
         history.Push(memento);
     }
 
-    public void Undo()
+    public ProfileMemento Undo()
     {
-        history.Pop();
+        return history.Pop();
     }
 }
